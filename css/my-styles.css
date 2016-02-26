@@ -1,0 +1,70 @@
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+
+/* --######### TOP PICTURE SECTION #####################################################-- */
+.top-pict-col{
+	background-color: #CCFFE5;
+	padding: 0;
+	margin: 50px 0 0 0;
+}
+
+.top-pict-col img{
+	width: 100%;
+}
+
+
+
+/* --######### ABOUT SECTION #####################################################-- */
+
+#about-me{
+	background-color: #EFEFEF;
+	font-size: 1.3em;
+	text-align: center;
+	padding: 0px 5%;
+}
+
+.about-me-col p{
+	padding: 80px 5% 20px 5%;
+}
+
+.social-icons{
+	font-size: 3em;
+	padding-bottom: 30px;
+	
+}
+
+/* --######### SKILLS SECTION #####################################################-- */
+#skills{
+	background-color: #E3E5E4;
+	font-size: 1.3em;
+	text-align: center;
+	padding: 0px 5%;
+}
+
+#skills img{
+	width: 60%;
+	margin: 30px auto 30px auto;
+}
+
+/* --######### EXPERIENCE SECTION #####################################################-- */
+
+#experience{
+	background-color: #EFEFEF;
+	font-size: 1.3em;
+	text-align: center;
+	padding: 0px 5%;
+}
+
+/* --######### PORTFOLIO SECTION #####################################################-- */
+
+#portfolio{
+	padding: 0px 5%;
+}
+
+#portfolio h1{
+	text-align: center;
+	margin: 50px 0;
+}
