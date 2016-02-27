@@ -114,6 +114,10 @@ footer{
 	padding: 20px 1% 0px 0px;
 }
 
+.footer-left{
+	display: inline-block;
+}
+
 .footer-right{
 	float: right;
 	display: table;
