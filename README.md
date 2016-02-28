@@ -1,3 +1,2 @@
 # portfolio
-This is my portfolio repository
-I'm using mediaqueries.
+This is my portfolio powered by Bootstrap
