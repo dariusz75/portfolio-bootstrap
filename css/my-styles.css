@@ -1,129 +1,102 @@
-*{
+/* --##################################################################################-- */
+* {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-}
- 
- h1, h2, h3, h4, h5 {
- 	font-weight: 300;
- } 
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 300; }
 
 /* --######### TOP PICTURE SECTION #####################################################-- */
-.top-pict-col{
-	background-color: #CCFFE5;
-	padding: 0;
-	margin: 50px 0 0 0;
-}
+.top-pict-col {
+  background-color: #CCFFE5;
+  padding: 0;
+  margin: 50px 0 0 0; }
 
-.top-pict-col img{
-	width: 100%;
-}
-
-
+.top-pict-col img {
+  width: 100%; }
 
 /* --######### ABOUT SECTION #####################################################-- */
+#about-me {
+  background-color: #EFEFEF;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 60px 5%; }
 
-#about-me{
-	background-color: #EFEFEF;
-	font-size: 1.3em;
-	text-align: center;
-	padding: 60px 5%;
-}
+.about-me-col h1 {
+  margin: 0; }
 
-.about-me-col h1{
-	margin: 0;
-}
+.about-me-col p {
+  padding: 20px 5% 20px 5%; }
 
-.about-me-col p{
-	padding: 20px 5% 20px 5%;
-}
-
-.social-icons{
-	font-size: 3em;
-}
+.social-icons {
+  font-size: 3em; }
 
 /* --######### SKILLS SECTION #####################################################-- */
-#skills{
-	background-color: #E3E5E4;
-	font-size: 1.3em;
-	text-align: center;
-	padding: 60px 5%;
-}
+#skills {
+  background-color: #E3E5E4;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 60px 5%; }
 
-#skills img{
-	width: 60%;
-	margin: 30px auto 30px auto;
-}
+#skills img {
+  width: 60%;
+  margin: 30px auto 30px auto; }
 
-#skills h1{
-	margin: 0;
-}
+#skills h1 {
+  margin: 0; }
 
-#skills p{
-	padding: 20px 5% 20px 5%;
-}
+#skills p {
+  padding: 20px 5% 20px 5%; }
+
 /* --######### EXPERIENCE SECTION #####################################################-- */
+#experience {
+  background-color: #EFEFEF;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 60px 5%; }
 
-#experience{
-	background-color: #EFEFEF;
-	font-size: 1.3em;
-	text-align: center;
-	padding: 60px 5%;
-}
+#experience h1 {
+  margin: 0; }
 
-#experience h1{
-	margin: 0;
-}
+#experience p {
+  padding: 20px 2% 20px 2%; }
 
-#experience p{
-	padding: 20px 2% 20px 2%;
-}
 /* --######### PORTFOLIO SECTION #####################################################-- */
+#portfolio {
+  padding: 60px 5%; }
 
-#portfolio{
-	padding: 60px 5%;
-}
-
-#portfolio h1{
-	text-align: center;
-	margin: 0 0 60px 0;
-}
+#portfolio h1 {
+  text-align: center;
+  margin: 0 0 60px 0; }
 
 /* --######### CONTACT SECTION #####################################################-- */
+#contact {
+  padding: 60px 5%;
+  background-color: #E3E5E4; }
 
-#contact{
-	padding: 60px 5%;
-	background-color: #E3E5E4;
-}
+.contact-content {
+  text-align: center;
+  padding: 0px 5% 0px 0px; }
 
-.contact-content{
-	text-align: center;
-	padding: 0px 5% 0px 0px;
-}
+.contact-content h2 {
+  font-size: 2em; }
 
-.contact-content h2{
-	font-size: 2em;
-}
-
-.form-top{
-	margin-top: 25px;
-}
+.form-top {
+  margin-top: 25px; }
 
 /* --######### FOOTER #####################################################-- */
+footer {
+  padding: 20px 1% 0px 0px; }
 
-footer{
-	padding: 20px 1% 0px 0px;
-}
+.footer-left {
+  display: inline-block; }
 
-.footer-left{
-	display: inline-block;
-}
+.footer-right {
+  float: right;
+  display: table; }
 
-.footer-right{
-	float: right;
-	display: table;
-}
+.footer-right a {
+  float: right;
+  top: -10; }
 
-.footer-right a{
-	float: right;
-	top: -10;
-}
+/*# sourceMappingURL=my-styles.css.map */
