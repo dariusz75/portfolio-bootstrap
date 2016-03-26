@@ -6,6 +6,10 @@
 h1, h2, h3, h4, h5 {
   font-weight: 300; }
 
+/* --######### NAVIGATION SECTION #####################################################-- */
+.nav {
+  font-size: 2rem; }
+
 /* --######### TOP PICTURE SECTION #####################################################-- */
 .top-pict-col {
   background-color: #CCFFE5;
@@ -22,8 +26,13 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   padding: 60px 5%; }
 
+.my_photo {
+  padding-top: 3rem;
+  margin-left: auto;
+  margin-right: auto; }
+
 .about-me-col h1 {
-  margin: 0; }
+  margin: 10px, 0; }
 
 .about-me-col p {
   padding: 20px 5% 20px 5%; }
