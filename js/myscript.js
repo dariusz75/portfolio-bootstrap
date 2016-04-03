@@ -1,34 +1,48 @@
-$(document).ready(function() {
-	// navigation click actions	
-	$('.scroll-link').on('click', function(event){
-		event.preventDefault();
-		var sectionID = $(this).attr("data-id");
-		scrollToID('#' + sectionID, 750);
-	});
-	// scroll to top action
-	$('.scroll-top').on('click', function(event) {
-		event.preventDefault();
-		$('html, body').animate({scrollTop:0}, 'slow'); 		
-	});
-	// mobile nav toggle
-	$('#nav-toggle').on('click', function (event) {
-		event.preventDefault();
-		$('#main-nav').toggleClass("open");
-	});
+
+
+
+// Scrolling animation
+
+var lastId,
+    topMenu = $("#ul_navigation"),
+    topMenuHeight = topMenu.outerHeight(),
+    // Wszystkie elementy listy
+    menuItems = topMenu.find("a"),
+    // Kotwice do pozycji menu
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+
+
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({ 
+      scrollTop: offsetTop
+  }, 1000);
+  e.preventDefault();
 });
-// scroll function
-function scrollToID(id, speed){
-	var offSet = 50;
-	var targetOffset = $(id).offset().top - offSet;
-	var mainNav = $('#main-nav');
-	$('html,body').animate({scrollTop:targetOffset}, speed);
-	if (mainNav.hasClass("open")) {
-		mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-		mainNav.removeClass("open");
-	}
-}
-if (typeof console === "undefined") {
-    console = {
-        log: function() { }
-    };
-}
+
+
+$(window).scroll(function(){
+   
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+  
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+   if (lastId !== id) {
+       lastId = id;
+       
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[href=#"+id+"]").parent().addClass("active");
+   }                   
+});
