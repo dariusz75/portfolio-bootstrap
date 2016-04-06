@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5 {
   margin: 0; }
 
 #skills p {
-  padding: 20px 5% 20px 5%; }
+  padding: 20px 5% 0 5%; }
 
 /* --######### EXPERIENCE SECTION #####################################################-- */
 #experience {
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5 {
 
 /* --######### CONTACT SECTION #####################################################-- */
 #contact {
-  padding: 60px 5%;
+  padding: 60px 5% 160px 5%;
   background-color: #E3E5E4; }
 
 .contact-content {

@@ -5,6 +5,7 @@ $myemail = "darius32@op.pl";
 /* Check all form inputs using check_input function */
 $name = check_input($_POST['inputName'], "Name:");
 $email = check_input($_POST['inputEmail'], "Email address:");
+$subject = check_input($_POST['inputSubject'], "Subject:");
 $message = check_input($_POST['inputMessage'], "Your message:");
 
 /* If e-mail is not valid show error message */

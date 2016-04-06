@@ -86,7 +86,7 @@ $main-padding: 60px 5%;
 }
 
 #skills p{
-	padding: 20px 5% 20px 5%;
+	padding: 20px 5% 0 5%;
 }
 /* --######### EXPERIENCE SECTION #####################################################-- */
 
@@ -118,7 +118,7 @@ $main-padding: 60px 5%;
 /* --######### CONTACT SECTION #####################################################-- */
 
 #contact{
-	padding: $main-padding;
+	padding: 60px 5% 160px 5%;
 	background-color: $darker-background;
 }
 
@@ -191,3 +191,4 @@ footer{
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
